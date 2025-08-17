@@ -1,0 +1,115 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚽ GOALSEER ⚡ - Predictions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">⚽ GOALSEER ⚡</div>
+      <p class="tagline">Unlock the magic of football predictions. Your winning journey begins here.</p>
+    </header>
+
+    <!-- Free Tips -->
+    <section>
+      <h2>🔥 Daily Free Tips</h2>
+      <div class="free-tips">
+        <p>Click below to reveal today's predictions.</p>
+        <button class="reveal-btn" id="revealBtn">Reveal Free Tips</button>
+        <div class="tips-container" id="tipsContainer">
+          <div class="loader" id="tipsLoader"></div>
+          <p id="loadingText">Loading today's predictions...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Packages -->
+    <section>
+      <h2>💎 VIP Packages</h2>
+      <div class="vip-levels">
+        <div class="vip-card">
+          <h3>VIP Level 1</h3>
+          <div class="vip-price">$10 <span>/ 2 Teams</span></div>
+          <button class="vip-btn" data-vip="vip1-2" data-price="10">Get 2 Teams</button>
+        </div>
+        <div class="vip-card">
+          <h3>VIP Level 2</h3>
+          <div class="vip-price">$30 <span>/ 4 Teams</span></div>
+          <button class="vip-btn" data-vip="vip2-4" data-price="30">Get 4 Teams</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section>
+      <h2>💰 Payment Methods</h2>
+      <div class="payment-options">
+        <!-- Bitcoin -->
+        <div class="payment-card">
+          <div class="payment-icon">
+            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin">
+          </div>
+          <h3>Bitcoin (BTC)</h3>
+          <div class="payment-address" id="btcAddress">12fbFx87YT97m7fJYUfEZscAmbqGVJrCah</div>
+          <button class="copy-btn" data-address="btcAddress">Copy Address</button>
+        </div>
+        <!-- Ethereum -->
+        <div class="payment-card">
+          <div class="payment-icon">
+            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum">
+          </div>
+          <h3>Ethereum (ETH)</h3>
+          <div class="payment-address" id="ethAddress">0xb89c9009f5958d91e25f235c7f17e3a93228f145</div>
+          <button class="copy-btn" data-address="ethAddress">Copy Address</button>
+        </div>
+        <!-- USDT -->
+        <div class="payment-card">
+          <div class="payment-icon">
+            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="USDT">
+          </div>
+          <h3>USDT (TRC20)</h3>
+          <div class="payment-address" id="usdtAddress">TVnuV3uxyqWQZCHL5SoyySxy4jWa1cbra3</div>
+          <button class="copy-btn" data-address="usdtAddress">Copy Address</button>
+        </div>
+        <!-- PayPal -->
+        <div class="payment-card">
+          <div class="payment-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+          </div>
+          <h3>PayPal</h3>
+          <div class="payment-address" id="paypalAddress">chrisbarizhnesh@gmail.com</div>
+          <button class="copy-btn" data-address="paypalAddress">Copy Email</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 GOALSEER</p>
+      <a href="#" id="privacyLink">Privacy Policy</a>
+      <a href="#" id="agreementLink">User Agreement</a>
+    </footer>
+  </div>
+
+  <!-- Notification -->
+  <div class="notification" id="notification"></div>
+
+  <!-- VIP Modal -->
+  <div class="modal" id="vipModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeVipModal">&times;</span>
+      <h3 id="vipModalTitle">VIP Predictions</h3>
+      <div class="locked-content" id="lockedContent">
+        <p>🔒 This content is locked. Contact support after payment.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase + App Script -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
